@@ -1,0 +1,10 @@
+{% extends "admin/change_list.html" %}
+
+{% block content %}
+    {{ block.super }}
+    <div class="registration-status-block">
+        <p>Pending: {{ pending_count }}</p>
+        <p>Approved: {{ approved_count }}</p>
+        <p>Rejected: {{ rejected_count }}</p>
+    </div>
+{% endblock %}

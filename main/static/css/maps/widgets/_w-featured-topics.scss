@@ -1,0 +1,46 @@
+/*------------- #W-FEATURED-TOPICS --------------*/
+
+
+
+.w-featured-topics {
+	li {
+	  & + li {
+		margin-top: 20px;
+	  }
+	}
+
+  .icon {
+	float: left;
+	margin-right: 10px;
+	font-size: 15px;
+	color: #ffdc1b;
+	color: var(--olympus-yellow);
+  }
+
+  .content {
+	overflow: hidden;
+  }
+
+  .title {
+	font-size: 13px;
+	display: block;
+	margin-bottom: 5px;
+
+	&:hover {
+	  color: #rgb(0, 181, 200);
+	  color: var(--olympus-primary-color);
+	}
+  }
+
+  time {
+	font-size: 11px;
+	margin-bottom: 5px;
+	display: block;
+  }
+
+  .forums {
+	font-size: 11px;
+	color: #rgb(0, 181, 200);
+	color: var(--olympus-primary-color);
+  }
+}

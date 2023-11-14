@@ -1,0 +1,1574 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>REGISTRATION ONBOARDING - Personal Information</title>
+<!-- Required meta tags always come first -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<!-- Theme Font -->
+<link as="style" href="css/theme-font.min.css" rel="preload" type="text/css"/>
+<!-- Bootstrap CSS -->
+<link href="{% static 'Bootstrap/dist/css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+<!-- Main Styles CSS -->
+<link href="{% static 'css/main.min.css' %}" rel="stylesheet" type="text/css"/>
+<!-- Main RTL CSS -->
+<!--<link rel="stylesheet" type="text/css" href="css/rtl.min.css">-->
+<!-- WebP Safari Support -->
+<script src="https://unpkg.com/webp-hero@0.0.0-dev.27/dist-cjs/polyfills.js"></script>
+<script src="https://unpkg.com/webp-hero@0.0.0-dev.27/dist-cjs/webp-hero.bundle.js"></script>
+</head>
+<body class="page-has-left-panels page-has-right-panels">
+<!-- Preloader -->
+<div id="hellopreloader">
+<div class="preloader">
+<svg height="45" stroke="#fff" width="45">
+<g fill="none" fill-rule="evenodd" stroke-width="2" transform="translate(1 1)">
+<circle cx="22" cy="22" r="6" stroke="none">
+<animate attributename="r" begin="1.5s" calcmode="linear" dur="3s" repeatcount="indefinite" values="6;22"></animate>
+<animate attributename="stroke-opacity" begin="1.5s" calcmode="linear" dur="3s" repeatcount="indefinite" values="1;0"></animate>
+<animate attributename="stroke-width" begin="1.5s" calcmode="linear" dur="3s" repeatcount="indefinite" values="2;0"></animate>
+</circle>
+<circle cx="22" cy="22" r="6" stroke="none">
+<animate attributename="r" begin="3s" calcmode="linear" dur="3s" repeatcount="indefinite" values="6;22"></animate>
+<animate attributename="stroke-opacity" begin="3s" calcmode="linear" dur="3s" repeatcount="indefinite" values="1;0"></animate>
+<animate attributename="stroke-width" begin="3s" calcmode="linear" dur="3s" repeatcount="indefinite" values="2;0"></animate>
+</circle>
+<circle cx="22" cy="22" r="8">
+<animate attributename="r" begin="0s" calcmode="linear" dur="1.5s" repeatcount="indefinite" values="6;1;2;3;4;5;6"></animate>
+</circle>
+</g>
+</svg>
+<div class="text">Loading ...</div>
+</div>
+</div>
+<!-- ... end Preloader -->
+<!-- Profile Settings Responsive -->
+<div class="profile-settings-responsive">
+<a class="js-profile-settings-open profile-settings-open" href="#">
+<svg class="settings-open-arrow" height="14" width="14"><use xlink:href="#olymp-popup-left-arrow"></use></svg>
+</a>
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+<div class="ui-block">
+<div class="your-profile">
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">Your PROFILE</h6>
+</div>
+<div class="accordion" id="accordionExample">
+<div class="accordion-item">
+<h6 class="accordion-header" id="headingOne">
+<button aria-controls="collapseOne" aria-expanded="true" class="accordion-button" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">
+								Profile Settings
+								<svg class="olymp-dropdown-arrow-icon"><use xlink:href="#olymp-dropdown-arrow-icon"></use></svg>
+</button>
+</h6>
+<div aria-labelledby="headingOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseOne">
+<div class="accordion-body">
+<ul class="your-profile-menu">
+<li>
+<a href="28-YourAccount-PersonalInformation.html">Personal Information</a>
+</li>
+<li>
+<a href="29-YourAccount-AccountSettings.html">Account Settings</a>
+</li>
+<li>
+<a href="30-YourAccount-ChangePassword.html">Change Password</a>
+</li>
+<li>
+<a href="31-YourAccount-HobbiesAndInterests.html">Hobbies and Interests</a>
+</li>
+<li>
+<a href="32-YourAccount-EducationAndEmployement.html">Education and Employement</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="ui-block-title">
+<a class="h6 title" href="33-YourAccount-Notifications.html">Notifications</a>
+<a class="items-round-little bg-primary" href="#">8</a>
+</div>
+<div class="ui-block-title">
+<a class="h6 title" href="34-YourAccount-ChatMessages.html">Chat / Messages</a>
+</div>
+<div class="ui-block-title">
+<a class="h6 title" href="35-YourAccount-FriendsRequests.html">Friend Requests</a>
+<a class="items-round-little bg-blue" href="#">4</a>
+</div>
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">FAVOURITE PAGE</h6>
+</div>
+<div class="ui-block-title">
+<a class="h6 title" href="36-FavPage-SettingsAndCreatePopup.html">Create Fav Page</a>
+</div>
+<div class="ui-block-title">
+<a class="h6 title" href="36-FavPage-SettingsAndCreatePopup.html">Fav Page Settings</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ... end Profile Settings Responsive -->
+<!-- Fixed Sidebar Left -->
+<div class="fixed-sidebar left">
+<div class="fixed-sidebar-left sidebar--small" id="sidebar-left" style="background: rgb(0, 181, 200);" style="background: rgb(0, 181, 200);">
+<a class="logo" href="02-ProfilePage.html">
+<div class="img-wrap">
+<img alt="Olympus" height="34" loading="lazy" src="{% static 'img/drm.png' %}" width="34"/>
+</div>
+</a>
+
+</div>
+<div class="fixed-sidebar-left sidebar--large" id="sidebar-left-1">
+<a class="logo" href="02-ProfilePage.html">
+<div class="img-wrap">
+<img alt="Olympus" height="34" loading="lazy" src="{% static 'img/drm.png' %}" width="34"/>
+</div>
+<div class="title-block">
+<h6 class="logo-title">olympus</h6>
+</div>
+</a>
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+<ul class="left-menu">
+<li>
+<a href="/logout/">
+                            <svg class="olymp-logout-icon">
+                                <use xlink:href="#olymp-logout-icon"></use>
+                            </svg>
+
+                        </a>
+</li>
+<li>
+<a href="03-Newsfeed.html">
+<svg class="olymp-newsfeed-icon left-menu-icon" data-bs-original-title="NEWSFEED" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-newsfeed-icon"></use></svg>
+<span class="left-menu-title">Newsfeed</span>
+</a>
+</li>
+<li>
+<a href="16-FavPagesFeed.html">
+<svg class="olymp-star-icon left-menu-icon" data-bs-original-title="FAV PAGE" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-star-icon"></use></svg>
+<span class="left-menu-title">Fav Pages Feed</span>
+</a>
+</li>
+<li>
+<a href="17-FriendGroups.html">
+<svg class="olymp-happy-faces-icon left-menu-icon" data-bs-original-title="FRIEND GROUPS" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-happy-faces-icon"></use></svg>
+<span class="left-menu-title">Friend Groups</span>
+</a>
+</li>
+<li>
+<a href="18-MusicAndPlaylists.html">
+<svg class="olymp-headphones-icon left-menu-icon" data-bs-original-title="MUSIC&amp;PLAYLISTS" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-headphones-icon"></use></svg>
+<span class="left-menu-title">Music &amp; Playlists</span>
+</a>
+</li>
+<li>
+<a href="19-WeatherWidget.html">
+<svg class="olymp-weather-icon left-menu-icon" data-bs-original-title="WEATHER APP" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-weather-icon"></use></svg>
+<span class="left-menu-title">Weather App</span>
+</a>
+</li>
+<li>
+<a href="20-CalendarAndEvents-MonthlyCalendar.html">
+<svg class="olymp-calendar-icon left-menu-icon" data-bs-original-title="CALENDAR AND EVENTS" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-calendar-icon"></use></svg>
+<span class="left-menu-title">Calendar and Events</span>
+</a>
+</li>
+<li>
+<a href="24-CommunityBadges.html">
+<svg class="olymp-badge-icon left-menu-icon" data-bs-original-title="Community Badges" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-badge-icon"></use></svg>
+<span class="left-menu-title">Community Badges</span>
+</a>
+</li>
+<li>
+<a href="25-FriendsBirthday.html">
+<svg class="olymp-cupcake-icon left-menu-icon" data-bs-original-title="Friends Birthdays" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-cupcake-icon"></use></svg>
+<span class="left-menu-title">Friends Birthdays</span>
+</a>
+</li>
+<li>
+<a href="26-Statistics.html">
+<svg class="olymp-stats-icon left-menu-icon" data-bs-original-title="Account Stats" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-stats-icon"></use></svg>
+<span class="left-menu-title">Account Stats</span>
+</a>
+</li>
+<li>
+<a href="27-ManageWidgets.html">
+<svg class="olymp-manage-widgets-icon left-menu-icon" data-bs-original-title="Manage Widgets" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-manage-widgets-icon"></use></svg>
+<span class="left-menu-title">Manage Widgets</span>
+</a>
+</li>
+</ul>
+<div class="profile-completion">
+<div class="skills-item">
+<div class="skills-item-info">
+<span class="skills-item-title">Profile Completion</span>
+<span class="skills-item-count"><span class="count-animate" data-from="0" data-refresh-interval="50" data-speed="1000" data-to="76"></span><span class="units">76%</span></span>
+</div>
+<div class="skills-item-meter">
+<span class="skills-item-meter-active bg-primary" style="width: 76%"></span>
+</div>
+</div>
+<span>Complete <a href="#">your profile</a> so people can know more about you!</span>
+</div>
+</div>
+</div>
+</div>
+<!-- ... end Fixed Sidebar Left -->
+<!-- Fixed Sidebar Left -->
+<div class="fixed-sidebar left fixed-sidebar-responsive">
+<div class="fixed-sidebar-left sidebar--small" id="sidebar-left-responsive">
+<a class="logo js-sidebar-open" href="#">
+<img alt="Olympus" height="34" loading="lazy" src="{% static 'img/drm.png' %}" width="34"/>
+</a>
+</div>
+<div class="fixed-sidebar-left sidebar--large" id="sidebar-left-1-responsive">
+<a class="logo" href="#">
+<div class="img-wrap">
+<img alt="Olympus" height="34" loading="lazy" src="{% static 'img/drm.png' %}" width="34"/>
+</div>
+<div class="title-block">
+<h6 class="logo-title">olympus</h6>
+</div>
+</a>
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+<div class="control-block">
+<div class="author-page author vcard inline-items">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="36" src="{% static 'img/author-page.webp' %}" width="36"/>
+<span class="icon-status online"></span>
+</div>
+<a class="author-name fn" href="02-ProfilePage.html">
+<div class="author-title">
+                                James Spiegel <svg class="olymp-dropdown-arrow-icon"><use xlink:href="#olymp-dropdown-arrow-icon"></use></svg>
+</div>
+<span class="author-subtitle">SPACE COWBOY</span>
+</a>
+</div>
+</div>
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">MAIN SECTIONS</h6>
+</div>
+<ul class="left-menu">
+<li>
+<a href="/logout/">
+                            <svg class="olymp-logout-icon">
+                                <use xlink:href="#olymp-logout-icon"></use>
+                            </svg>
+
+                        </a>
+</li>
+<li>
+<a href="mobile-index.html">
+<svg class="olymp-newsfeed-icon left-menu-icon" data-bs-original-title="NEWSFEED" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-newsfeed-icon"></use></svg>
+<span class="left-menu-title">Newsfeed</span>
+</a>
+</li>
+<li>
+<a href="Mobile-28-YourAccount-PersonalInformation.html">
+<svg class="olymp-star-icon left-menu-icon" data-bs-original-title="FAV PAGE" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-star-icon"></use></svg>
+<span class="left-menu-title">Fav Pages Feed</span>
+</a>
+</li>
+<li>
+<a href="mobile-29-YourAccount-AccountSettings.html">
+<svg class="olymp-happy-faces-icon left-menu-icon" data-bs-original-title="FRIEND GROUPS" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-happy-faces-icon"></use></svg>
+<span class="left-menu-title">Friend Groups</span>
+</a>
+</li>
+<li>
+<a href="Mobile-30-YourAccount-ChangePassword.html">
+<svg class="olymp-headphones-icon left-menu-icon" data-bs-original-title="MUSIC&amp;PLAYLISTS" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-headphones-icon"></use></svg>
+<span class="left-menu-title">Music &amp; Playlists</span>
+</a>
+</li>
+<li>
+<a href="Mobile-31-YourAccount-HobbiesAndInterests.html">
+<svg class="olymp-weather-icon left-menu-icon" data-bs-original-title="WEATHER APP" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-weather-icon"></use></svg>
+<span class="left-menu-title">Weather App</span>
+</a>
+</li>
+<li>
+<a href="Mobile-32-YourAccount-EducationAndEmployement.html">
+<svg class="olymp-calendar-icon left-menu-icon" data-bs-original-title="CALENDAR AND EVENTS" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-calendar-icon"></use></svg>
+<span class="left-menu-title">Calendar and Events</span>
+</a>
+</li>
+<li>
+<a href="Mobile-33-YourAccount-Notifications.html">
+<svg class="olymp-badge-icon left-menu-icon" data-bs-original-title="Community Badges" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-badge-icon"></use></svg>
+<span class="left-menu-title">Community Badges</span>
+</a>
+</li>
+<li>
+<a href="Mobile-34-YourAccount-ChatMessages.html">
+<svg class="olymp-cupcake-icon left-menu-icon" data-bs-original-title="Friends Birthdays" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-cupcake-icon"></use></svg>
+<span class="left-menu-title">Friends Birthdays</span>
+</a>
+</li>
+<li>
+<a href="Mobile-35-YourAccount-FriendsRequests.html">
+<svg class="olymp-stats-icon left-menu-icon" data-bs-original-title="Account Stats" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-stats-icon"></use></svg>
+<span class="left-menu-title">Account Stats</span>
+</a>
+</li>
+<li>
+<a href="#">
+<svg class="olymp-manage-widgets-icon left-menu-icon" data-bs-original-title="Manage Widgets" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-manage-widgets-icon"></use></svg>
+<span class="left-menu-title">Manage Widgets</span>
+</a>
+</li>
+</ul>
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">REGISTRATION ONBOARDING</h6>
+</div>
+<ul class="account-settings">
+<li>
+<a href="#">
+<svg class="olymp-menu-icon"><use xlink:href="#olymp-menu-icon"></use></svg>
+<span>Profile Settings</span>
+</a>
+</li>
+<li>
+<a href="#">
+<svg class="olymp-star-icon left-menu-icon" data-bs-original-title="FAV PAGE" data-bs-placement="right" data-bs-toggle="tooltip"><use xlink:href="#olymp-star-icon"></use></svg>
+<span>Create Fav Page</span>
+</a>
+</li>
+<li>
+<a href="/logout/">
+<svg class="olymp-logout-icon"><use xlink:href="#olymp-logout-icon"></use></svg>
+<span>Log Out</span>
+</a>
+</li>
+</ul>
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">About Olympus</h6>
+</div>
+<ul class="about-olympus">
+<li>
+<a href="#">
+<span>Terms and Conditions</span>
+</a>
+</li>
+<li>
+<a href="#">
+<span>FAQs</span>
+</a>
+</li>
+<li>
+<a href="#">
+<span>Careers</span>
+</a>
+</li>
+<li>
+<a href="#">
+<span>Contact</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- ... end Fixed Sidebar Left -->
+
+<!-- Fixed Sidebar Right-Responsive -->
+<div class="fixed-sidebar right fixed-sidebar-responsive" id="sidebar-right-responsive">
+<div class="fixed-sidebar-right sidebar--small">
+<a href="/logout/">
+                            <svg class="olymp-logout-icon">
+                                <use xlink:href="#olymp-logout-icon"></use>
+                            </svg>
+
+                        </a>
+</div>
+<div class="fixed-sidebar-right sidebar--large">
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+<div class="ui-block-title ui-block-title-small">
+<a class="title" href="#">Close Friends</a>
+<a href="#">Settings</a>
+</div>
+<ul class="chat-users">
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar67-sm.webp' %}" width="34"/>
+<span class="icon-status online"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Carol Summers</a>
+<span class="status">ONLINE</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar62-sm.webp' %}" width="34"/>
+<span class="icon-status online"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Mathilda Brinker</a>
+<span class="status">AT WORK!</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar68-sm.webp' %}" width="34"/>
+<span class="icon-status online"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Carol Summers</a>
+<span class="status">ONLINE</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar69-sm.webp' %}" width="34"/>
+<span class="icon-status away"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Michael Maximoff</a>
+<span class="status">AWAY</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar70-sm.webp' %}" width="34"/>
+<span class="icon-status disconected"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Rachel Howlett</a>
+<span class="status">OFFLINE</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="ui-block-title ui-block-title-small">
+<a class="title" href="#">MY FAMILY</a>
+<a href="#">Settings</a>
+</div>
+<ul class="chat-users">
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar64-sm.webp' %}" width="34"/>
+<span class="icon-status online"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Sarah Hetfield</a>
+<span class="status">ONLINE</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<div class="ui-block-title ui-block-title-small">
+<a class="title" href="#">UNCATEGORIZED</a>
+<a href="#">Settings</a>
+</div>
+<ul class="chat-users">
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar71-sm.webp' %}" width="34"/>
+<span class="icon-status online"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Bruce Peterson</a>
+<span class="status">ONLINE</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar72-sm.webp' %}" width="34"/>
+<span class="icon-status away"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Chris Greyson</a>
+<span class="status">AWAY</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar63-sm.webp' %}" width="34"/>
+<span class="icon-status status-invisible"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Nicholas Grisom</a>
+<span class="status">INVISIBLE</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar72-sm.webp' %}" width="34"/>
+<span class="icon-status away"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Chris Greyson</a>
+<span class="status">AWAY</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+<li class="inline-items js-chat-open">
+<div class="author-thumb">
+<img alt="author" class="avatar" height="34" loading="lazy" src="{% static 'img/avatar71-sm.webp' %}" width="34"/>
+<span class="icon-status online"></span>
+</div>
+<div class="author-status">
+<a class="h6 author-name" href="#">Bruce Peterson</a>
+<span class="status">ONLINE</span>
+</div>
+<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="#olymp-three-dots-icon"></use></svg>
+<ul class="more-icons">
+<li>
+<svg class="olymp-comments-post-icon" data-bs-original-title="START CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-add-to-conversation-icon" data-bs-original-title="ADD TO CONVERSATION" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-add-to-conversation-icon"></use></svg>
+</li>
+<li>
+<svg class="olymp-block-from-chat-icon" data-bs-original-title="BLOCK FROM CHAT" data-bs-placement="top" data-bs-toggle="tooltip"><use xlink:href="#olymp-block-from-chat-icon"></use></svg>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="search-friend inline-items">
+<form class="form-group">
+<input class="form-control" placeholder="Search Friends..." type="text" value=""/>
+</form>
+<a class="settings" href="29-YourAccount-AccountSettings.html">
+<svg class="olymp-settings-icon"><use xlink:href="#olymp-settings-icon"></use></svg>
+</a>
+<a href="/logout/">
+Logout
+</a>
+</div>
+<a class="olympus-chat inline-items js-chat-open" href="#">
+<h6 class="olympus-chat-title">OLYMPUS CHAT</h6>
+<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+</a>
+</div>
+</div>
+<!-- ... end Fixed Sidebar Right-Responsive -->
+<!-- Header-BP -->
+<header class="header" id="site-header" style="background: rgb(0, 181, 200)">
+<div class="page-title">
+<h6>REGISTRATION ONBOARDING</h6>
+</div>
+<div class="header-content-wrapper" style="background: rgb(0, 181, 200);">
+<div class="control-block">
+
+<div class="author-page author vcard inline-items more">
+    <div class="author-thumb">
+        <span class="icon-status online"></span>
+        <div class="more-dropdown more-with-triangle">
+            <div class="mCustomScrollbar" data-mcs-theme="dark">
+                <div class="ui-block-title ui-block-title-small">
+                    <h6 class="title">REGISTRATION ONBOARDING</h6>
+                </div>
+                <ul class="account-settings">
+                    <li>
+                        <a href="/password_reset/">
+                            <svg class="olymp-menu-icon">
+                                <use xlink:href="#olymp-menu-icon"></use>
+                            </svg>
+                            <span>Reset Password</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/logout/">
+                            <svg class="olymp-logout-icon">
+                                <use xlink:href="#olymp-logout-icon"></use>
+                            </svg>
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a class="author-name fn">
+        <div class="author-title">Menu
+            <svg class="olymp-dropdown-arrow-icon">
+                <use xlink:href="#olymp-dropdown-arrow-icon"></use>
+            </svg>
+        </div>
+        <span class="author-subtitle">Login/Logout</span>
+    </a>
+</div>
+
+</div>
+</div>
+</header>
+<!-- ... end Header-BP -->
+<!-- Responsive Header-BP -->
+<header class="header header-responsive" id="site-header-responsive" style="background: rgb(0, 181, 200);">
+
+<!-- Tab panes -->
+<div class="tab-content tab-content-responsive">
+<div aria-labelledby="request-tab" class="tab-pane fade" id="request" role="tabpanel">
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">FRIEND REQUESTS</h6>
+<a href="#">Find Friends</a>
+<a href="#">Settings</a>
+</div>
+<ul class="notification-list friend-requests">
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar55-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<a class="h6 notification-friend" href="#">Tamara Romanoff</a>
+<span class="chat-message-item">Mutual Friend: Sarah Hetfield</span>
+</div>
+<span class="notification-icon">
+<a class="accept-request" href="#">
+<span class="icon-add without-text">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+</a>
+<a class="accept-request request-del" href="#">
+<span class="icon-minus">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+</a>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+</div>
+</li>
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar56-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<a class="h6 notification-friend" href="#">Tony Stevens</a>
+<span class="chat-message-item">4 Friends in Common</span>
+</div>
+<span class="notification-icon">
+<a class="accept-request" href="#">
+<span class="icon-add without-text">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+</a>
+<a class="accept-request request-del" href="#">
+<span class="icon-minus">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+</a>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+</div>
+</li>
+<li class="accepted">
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar57-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+                                You and
+                                <a class="h6 notification-friend" href="#">Mary Jane Stark</a> just became friends. Write on
+                                <a class="notification-link" href="#">her wall</a>.
+                            </div>
+<span class="notification-icon">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+<svg class="olymp-little-delete">
+<use xlink:href="#olymp-little-delete"></use>
+</svg>
+</div>
+</li>
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar58-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<a class="h6 notification-friend" href="#">Stagg Clothing</a>
+<span class="chat-message-item">9 Friends in Common</span>
+</div>
+<span class="notification-icon">
+<a class="accept-request" href="#">
+<span class="icon-add without-text">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+</a>
+<a class="accept-request request-del" href="#">
+<span class="icon-minus">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+</a>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+</div>
+</li>
+</ul>
+<a class="view-all bg-blue" href="#">Check all your Events</a>
+</div>
+</div>
+<div aria-labelledby="chat-tab" class="tab-pane fade" id="chat" role="tabpanel">
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">Chat / Messages</h6>
+<a href="#">Mark all as read</a>
+<a href="#">Settings</a>
+</div>
+<ul class="notification-list chat-message">
+<li class="message-unread">
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar59-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<a class="h6 notification-friend" href="#">Diana Jameson</a>
+<span class="chat-message-item">Hi James! It’s Diana, I just wanted to let you know that we have to reschedule...</span>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">4 hours ago</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+</div>
+</li>
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar60-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<a class="h6 notification-friend" href="#">Jake Parker</a>
+<span class="chat-message-item">Great, I’ll see you tomorrow!.</span>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">4 hours ago</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+</div>
+</li>
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar61-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<a class="h6 notification-friend" href="#">Elaine Dreyfuss</a>
+<span class="chat-message-item">We’ll have to check that at the office and see if the client is on board with...</span>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 9:56pm</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+</div>
+</li>
+<li class="chat-group">
+<div class="author-thumb">
+<img alt="author" height="16" loading="lazy" src="{% static 'img/avatar11-sm.webp' %}" width="16"/>
+<img alt="author" height="16" loading="lazy" src="{% static 'img/avatar12-sm.webp' %}" width="16"/>
+<img alt="author" height="16" loading="lazy" src="{% static 'img/avatar13-sm.webp' %}" width="16"/>
+<img alt="author" height="36" loading="lazy" src="{% static 'img/avatar10-sm.webp' %}" width="36"/>
+</div>
+<div class="notification-event">
+<a class="h6 notification-friend" href="#">You, Faye, Ed &amp; Jet +3</a>
+<span class="last-message-author">Ed:</span>
+<span class="chat-message-item">Yeah! Seems fine by me!</span>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 16th at 10:23am</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-chat---messages-icon"><use xlink:href="#olymp-chat---messages-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+</div>
+</li>
+</ul>
+<a class="view-all bg-purple" href="#">View All Messages</a>
+</div>
+</div>
+<div aria-labelledby="notification-tab" class="tab-pane fade" id="notification" role="tabpanel">
+<div class="mCustomScrollbar" data-mcs-theme="dark">
+<div class="ui-block-title ui-block-title-small">
+<h6 class="title">Notifications</h6>
+<a href="#">Mark all as read</a>
+<a href="#">Settings</a>
+</div>
+<ul class="notification-list">
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar62-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<div><a class="h6 notification-friend" href="#">Mathilda Brinker</a> commented on your new
+                                    <a class="notification-link" href="#">profile status</a>.
+                                </div>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">4 hours ago</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-comments-post-icon"><use xlink:href="#olymp-comments-post-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+<svg class="olymp-little-delete">
+<use xlink:href="#olymp-little-delete"></use>
+</svg>
+</div>
+</li>
+<li class="un-read">
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar63-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<div>You and
+                                    <a class="h6 notification-friend" href="#">Nicholas Grissom</a> just became friends. Write on
+                                    <a class="notification-link" href="#">his wall</a>.
+                                </div>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">9 hours ago</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+<svg class="olymp-little-delete">
+<use xlink:href="#olymp-little-delete"></use>
+</svg>
+</div>
+</li>
+<li class="with-comment-photo-wrap">
+<div class="with-comment-photo">
+<div class="author-thumb"><img alt="author" height="34" loading="lazy" src="{% static 'img/avatar64-sm.webp' %}" width="34"/></div>
+<div class="notification-event">
+<div><a class="h6 notification-friend" href="#">Sarah Hetfield</a> commented on your
+                                        <a class="notification-link" href="#">photo</a>.
+                                    </div>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">Yesterday at 5:32am</time></span>
+</div>
+<span class="notification-icon"> <svg class="olymp-comments-post-icon"><use xlink:href="#olymp-comments-post-icon"></use></svg> </span>
+</div>
+<div class="comment-photo"><img alt="photo" height="40" loading="lazy" src="{% static 'img/comment-photo1.webp' %}" width="40"/>
+<span>“She looks incredible in that outfit! We should see each...”</span></div>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+<svg class="olymp-little-delete">
+<use xlink:href="#olymp-little-delete"></use>
+</svg>
+</div>
+</li>
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar65-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<div>
+<a class="h6 notification-friend" href="#">Green Goo Rock</a> invited you to attend to his event Goo in
+                                    <a class="notification-link" href="#">Gotham Bar</a>.
+                                </div>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 5th at 6:43pm</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-happy-face-icon"><use xlink:href="#olymp-happy-face-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+<svg class="olymp-little-delete">
+<use xlink:href="#olymp-little-delete"></use>
+</svg>
+</div>
+</li>
+<li>
+<div class="author-thumb">
+<img alt="author" height="34" loading="lazy" src="{% static 'img/avatar66-sm.webp' %}" width="34"/>
+</div>
+<div class="notification-event">
+<div><a class="h6 notification-friend" href="#">James Summers</a> commented on your new
+                                    <a class="notification-link" href="#">profile status</a>.
+                                </div>
+<span class="notification-date"><time class="entry-date updated" datetime="2004-07-24T18:18">March 2nd at 8:29pm</time></span>
+</div>
+<span class="notification-icon">
+<svg class="olymp-heart-icon"><use xlink:href="#olymp-heart-icon"></use></svg>
+</span>
+<div class="more">
+<svg class="olymp-three-dots-icon">
+<use xlink:href="#olymp-three-dots-icon"></use>
+</svg>
+<svg class="olymp-little-delete">
+<use xlink:href="#olymp-little-delete"></use>
+</svg>
+</div>
+</li>
+</ul>
+<a class="view-all bg-primary" href="#">View All Notifications</a>
+</div>
+</div>
+<div aria-labelledby="search-tab" class="tab-pane fade" id="search" role="tabpanel">
+<form class="search-bar w-search notification-list friend-requests">
+<div class="form-group with-button">
+<input class="form-control js-user-search" placeholder="Search here people or pages..." type="text"/>
+</div>
+</form>
+</div>
+</div>
+<!-- ... end  Tab panes -->
+</header>
+<!-- ... end Responsive Header-BP -->
+<div class="header-spacer header-spacer-small"></div>
+<!-- Main Header Account -->
+<div class="main-header">
+<div class="content-bg-wrap bg-account" style="display: none;"></div>
+<div class="container">
+<div class="row">
+<div class="col col-lg-8 m-auto col-md-8 col-sm-12 col-12">
+<div class="main-header-content" style="display: none;">
+<h1>REGISTRATION ONBOARDING Dashboard</h1>
+<p>Welcome to REGISTRATION ONBOARDING dashboard! Here you’ll find everything you need to change your profile information, settings, read notifications and requests, view your latest messages, change your pasword and much more! Also you can create
+                            or manage your own favourite page, have fun!</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<script>
+    function editForm() {
+        var inputs = document.getElementsByTagName("input");
+        var selects = document.getElementsByTagName("select");
+
+        for (var i=0; i< inputs.length; i++) {
+            inputs[i].disabled = false;
+        }
+
+        for (var i=0; i< selects.length; i++) {
+            selects[i].disabled = false;
+        }
+    }
+
+    function showAdditionalFields() {
+        const occupationSelect = document.getElementById("occupation");
+        const studentFields = document.getElementById("studentFields");
+        const jobFields = document.getElementById("jobFields");
+        const businessFields = document.getElementById("businessFields");
+
+        studentFields.style.display = "none";
+        jobFields.style.display = "none";
+        businessFields.style.display = "none";
+
+        if (occupationSelect.value === "Student") {
+            studentFields.style.display = "block";
+        } else if (occupationSelect.value === "Job") {
+            jobFields.style.display = "block";
+        } else if (occupationSelect.value === "Business") {
+            businessFields.style.display = "block";
+        }
+    }
+
+    function showFields() {
+        const nationalitySelect = document.getElementById("nationality");
+        const proofOfOrigin = document.getElementById("proofOfOrigin");
+        const inputIDNo = document.getElementById("inputIDNo");
+
+        proofOfOrigin.style.display = "none";
+        inputIDNo.style.display = "none";
+
+        if (nationalitySelect.value !== "Pakistan") {
+            proofOfOrigin.style.display = "block";
+            if (nationalitySelect.value === "other") {
+                inputIDNo.style.display = "block";
+            }
+        }
+    }
+
+    function showVisaDetails() {
+        const visaStatusSelect = document.getElementById("visaStatus");
+        const visaDetails = document.getElementById("visaDetails");
+        const visaExpiry = document.getElementById("visaExpiry");
+            visaDetails.style.display = "block";
+            visaExpiry.style.display = "block";
+    }
+</script>
+<!-- ... end Main Header Account -->
+<!-- REGISTRATION ONBOARDING Personal Information -->
+<div class="container">
+<div class="row">
+<div class="col col-xl-9 order-xl-2 col-lg-9 order-lg-2 col-md-12 order-md-1 col-sm-12 col-12">
+<div class="ui-block">
+<div class="ui-block-title">
+    {% if data.status == 'PENDING' %}
+    <h4 class="title">REGISTRATION ONBOARDING is under Review.</h4>
+    {% elif data.status == 'REJECTED' %}
+    <h4 class="title">REGISTRATION ONBOARDING is Rejected.</h4>
+    {% else %}
+    <h4 class="title">REGISTRATION ONBOARDING is Approved.</h4>
+    <button class="btn btn-primary btn-lg full-width" onclick="editForm()">Edit</button>
+    {% endif %}
+</div>
+<div class="ui-block-content">
+<!-- Personal Information Form  -->
+
+<form method="post" action="/update_data/">
+    {%csrf_token%}
+    <h6 class="title">Personal Information</h6>
+    <div class="row">
+        <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group label-floating">
+                <label class="control-label">Email</label>
+                <input class="form-control" disabled placeholder="" name="email" type="email" {% if data.email %} value="{{ data.email }}" {% else %} value="" {% endif %} />
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Full Name (as on Passport)</label>
+                <input class="form-control" disabled placeholder="" name="name" type="text" {% if data.name %} value="{{ data.name }}" {% else %} value="" {% endif %} />
+            </div>
+            <div class="form-group label-floating is-select">
+                <label class="control-label">Gender</label>
+                <select class="form-select" disabled disabled name="gender">
+                    {% if data.gender == 'Male' %}
+                    <option selected value="male">Male</option>
+                    <option value="female">Female</option>
+                    {% else %}
+                    <option value="male">Male</option>
+                    <option selected value="female">Female</option>
+                    {% endif %}
+                </select>
+            </div>
+            <div class="form-group date-time-picker label-floating">
+                     <label class="control-label">Date Of Birth</label>
+                <input class="form-control" disabled name="dob" type="date" {% if data.dob %} value="{{ data.dob }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating is-select">
+                <label class="control-label">Marital Status</label>
+                <select class="form-select" disabled name="relationship">
+                    {% if data.relationship == 'single' %}
+                    <option selected value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widow">Widow</option>
+                    <option value="widower">Widower</option>
+                    <option value="divorced">Divorced</option>
+                    {% elif data.relationship == 'married' %}
+                    <option value="single">Single</option>
+                    <option selected value="married">Married</option>
+                    <option value="widow">Widow</option>
+                    <option value="widower">Widower</option>
+                    <option value="divorced">Divorced</option>
+                    {% elif data.relationship == 'widow' %}
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option selected value="widow">Widow</option>
+                    <option value="widower">Widower</option>
+                    <option value="divorced">Divorced</option>
+                    {% elif data.relationship == 'widower' %}
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widow">Widow</option>
+                    <option selected value="widower">Widower</option>
+                    <option value="divorced">Divorced</option>
+                    {% else %}
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widow">Widow</option>
+                    <option value="widower">Widower</option>
+                    <option selected value="divorced">Divorced</option>
+                    {% endif %}
+                </select>
+            </div>
+           <div class="form-group label-floating is-select">
+                    <label class="control-label">Occupation</label>
+                    <select class="form-select" disabled id="occupation" name="occupation" onchange="showAdditionalFields()">
+                        {% if data.occupation == 'Student' %}
+                        <option selected value="Student">Student</option>
+                        <option value="Job">Job</option>
+                        <option value="Business">Business</option>
+                        {% elif data.occupation == 'Job' %}
+                        <option value="Student">Student</option>
+                        <option selected value="Job">Job</option>
+                        <option value="Business">Business</option>
+                        {% else %}
+                        <option value="Student">Student</option>
+                        <option value="Job">Job</option>
+                        <option selected value="Business">Business</option>
+                        {% endif %}
+                    </select>
+                </div>
+
+                <!-- Additional fields based on occupation -->
+                {% if data.occupation == 'Student' %}
+                <div class="form-group" id="studentFields" style="display: block;">
+                    <label class="control-label">School Name</label>
+                    <input class="form-control" disabled placeholder="" name="school_name" type="text" {% if data.school_name %} value="{{ data.school_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Grade</label>
+                    <input class="form-control" disabled placeholder="" name="grade" type="text" {% if data.grade %} value="{{ data.grade }}" {% else %} value="" {% endif %}/>
+                </div>
+                <div class="form-group" id="jobFields" style="display: none;">
+                    <label class="control-label">Job Name</label>
+                    <input class="form-control" disabled placeholder="" name="job_name" type="text" {% if data.job_name %} value="{{ data.job_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Company/Employer Name</label>
+                    <input class="form-control" disabled placeholder="" name="job_company" type="text" {% if data.job_company %} value="{{ data.job_company }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Other Details</label>
+                    <input class="form-control" disabled placeholder="" name="job_details" type="text" {% if data.job_details %} value="{{ data.job_details }}" {% else %} value="" {% endif %}/>
+                </div>
+                <div class="form-group" id="businessFields" style="display: none;">
+                    <label class="control-label">Company Name</label>
+                    <input class="form-control" disabled placeholder="" name="company_name" type="text" {% if data.company_name %} value="{{ data.company_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Business Type (Industry/Field)</label>
+                    <input class="form-control" disabled placeholder="" name="business_type" type="text" {% if data.business_type %} value="{{ data.business_type }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Company Locations</label>
+                    <input class="form-control" disabled placeholder="" type="text" name="company_details" {% if data.company_details %} value="{{ data.company_details }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">More Details About Business</label>
+                    <input class="form-control" disabled placeholder="" type="text" name="buisness_details" {% if data.buisness_details %} value="{{ data.buisness_details }}" {% else %} value="" {% endif %}/>
+                </div>
+
+                {% elif data.occupation == 'Job' %}
+                <div class="form-group" id="studentFields" style="display: none;">
+                    <label class="control-label">School Name</label>
+                    <input class="form-control" disabled placeholder="" name="school_name" type="text" {% if data.school_name %} value="{{ data.school_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Grade</label>
+                    <input class="form-control" disabled placeholder="" name="grade" type="text" {% if data.grade %} value="{{ data.grade }}" {% else %} value="" {% endif %}/>
+                </div>
+                <div class="form-group" id="jobFields" style="display: block;">
+                    <label class="control-label">Job Name</label>
+                    <input class="form-control" disabled placeholder="" name="job_name" type="text" {% if data.job_name %} value="{{ data.job_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Company/Employer Name</label>
+                    <input class="form-control" disabled placeholder="" name="job_company" type="text" {% if data.job_company %} value="{{ data.job_company }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Other Details</label>
+                    <input class="form-control" disabled placeholder="" name="job_details" type="text" {% if data.job_details %} value="{{ data.job_details }}" {% else %} value="" {% endif %}/>
+                </div>
+                <div class="form-group" id="businessFields" style="display: none;">
+                    <label class="control-label">Company Name</label>
+                    <input class="form-control" disabled placeholder="" name="company_name" type="text" {% if data.company_name %} value="{{ data.company_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Business Type (Industry/Field)</label>
+                    <input class="form-control" disabled placeholder="" name="business_type" type="text" {% if data.business_type %} value="{{ data.business_type }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Company Locations</label>
+                    <input class="form-control" disabled placeholder="" type="text" name="company_details" {% if data.company_details %} value="{{ data.company_details }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">More Details About Business</label>
+                    <input class="form-control" disabled placeholder="" type="text" name="buisness_details" {% if data.buisness_details %} value="{{ data.buisness_details }}" {% else %} value="" {% endif %}/>
+                </div>
+
+
+                {% else %}
+                <div class="form-group" id="studentFields" style="display: none;">
+                    <label class="control-label">School Name</label>
+                    <input class="form-control" disabled placeholder="" name="school_name" type="text" {% if data.school_name %} value="{{ data.school_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Grade</label>
+                    <input class="form-control" disabled placeholder="" name="grade" type="text" {% if data.grade %} value="{{ data.grade }}" {% else %} value="" {% endif %}/>
+                </div>
+                <div class="form-group" id="jobFields" style="display: none;">
+                    <label class="control-label">Job Name</label>
+                    <input class="form-control" disabled placeholder="" name="job_name" type="text" {% if data.job_name %} value="{{ data.job_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Company/Employer Name</label>
+                    <input class="form-control" disabled placeholder="" name="job_company" type="text" {% if data.job_company %} value="{{ data.job_company }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Other Details</label>
+                    <input class="form-control" disabled placeholder="" name="job_details" type="text" {% if data.job_details %} value="{{ data.job_details }}" {% else %} value="" {% endif %}/>
+                </div>
+                <div class="form-group" id="businessFields" style="display: block;">
+                    <label class="control-label">Company Name</label>
+                    <input class="form-control" disabled placeholder="" name="company_name" type="text" {% if data.company_name %} value="{{ data.company_name }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Business Type (Industry/Field)</label>
+                    <input class="form-control" disabled placeholder="" name="business_type" type="text" {% if data.business_type %} value="{{ data.business_type }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">Company Locations</label>
+                    <input class="form-control" disabled placeholder="" type="text" name="company_details" {% if data.company_details %} value="{{ data.company_details }}" {% else %} value="" {% endif %}/>
+                    <label class="control-label">More Details About Business</label>
+                    <input class="form-control" disabled placeholder="" type="text" name="buisness_details" {% if data.buisness_details %} value="{{ data.buisness_details }}" {% else %} value="" {% endif %}/>
+                </div>
+
+                {% endif %}
+        </div>
+        <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group label-floating">
+                <label class="control-label">Passport No</label>
+                <input class="form-control" disabled placeholder="" name="passport_number" type="text" {% if data.passport_number %} value="{{ data.passport_number }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group date-time-picker label-floating">
+                <label class="control-label">Expiration Passport</label>
+                <input class="form-control" disabled name="passport_expiry" type="date" {% if data.passport_expiry %} value="{{ data.passport_expiry }}" {% else %} value="" {% endif %}>
+                <span class="input-group-addon">
+                    <svg class="olymp-month-calendar-icon icon"><use xlink:href="#olymp-month-calendar-icon"></use></svg>
+                </span>
+                </input>
+            </div>
+    <div class="form-group label-floating is-select">
+                    <label class="control-label">Nationality</label>
+                    <select class="form-select" disabled id="nationality" onchange="showFields()" name="nationality">
+                        {% if data.nationality == 'Pakistan' %}
+                        <option selected value="Pakistan">Pakistan</option>
+                        <option value="USA">United States</option>
+                        <option value="Australia">Australia</option>
+                        {% elif data.nationality == 'USA' %}
+                        <option value="Pakistan">Pakistan</option>
+                        <option selected value="USA">United States</option>
+                        <option value="Australia">Australia</option>
+                        {% else %}
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="USA">United States</option>
+                        <option selected value="Australia">Australia</option>
+                        {% endif %}
+                        <!-- Add more countries here -->
+                    </select>
+                </div>
+
+                <!-- Additional fields if nationality isn't Pakistan -->
+                {% if data.nationality != 'Pakistan' %}
+                <div class="form-group" id="proofOfOrigin" style="display: block;">
+                    <label class="control-label">Proof of Pakistan Origin</label>
+                    <select class="form-select" disabled name="proof_of_origin">
+                        {% if data.proof_of_origin == 'NIC' %}
+                        <option selected value="NIC">NIC</option>
+                        <option value="POC">POC</option>
+                        <option value="Other">Other</option>
+                        {% elif data.proof_of_origin == 'POC' %}
+                        <option value="NIC">NIC</option>
+                        <option selected value="POC">POC</option>
+                        <option value="Other">Other</option>
+                        {% else %}
+                        <option value="NIC">NIC</option>
+                        <option value="POC">POC</option>
+                        <option selected value="Other">Other</option>
+                        {% endif %}
+                    </select>
+                </div>
+                {% else %}
+                <div class="form-group" id="proofOfOrigin" style="display: none;">
+                    <label class="control-label">Proof of Pakistan Origin</label>
+                    <select class="form-select" disabled name="proof_of_origin">
+                        <option selected value="NIC">NIC</option>
+                        <option value="POC">POC</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                {% endif %}
+                <div class="form-group" id="inputIDNo" style="display: none;">
+                    <label class="control-label">Input ID No for Proof of Origin</label>
+                    <input class="form-control" disabled placeholder="" type="text" name="origin_id_number" {% if data.origin_id_number %} value="{{ data.origin_id_number }}" {% else %} value="" {% endif %}/>
+                </div>
+
+                <div class="form-group label-floating is-select">
+                    <label class="control-label">Visa Status</label>
+                    <select class="form-select" disabled id="visaStatus" onchange="showVisaDetails()" name="">
+                        {% if data.visa_status == 'Permit' %}
+                        <option selected value="Permit">Permit</option>
+                        <option value="Visit_Visa">Visit Visa</option>
+                        <option value="Temporary_Permit">Temporary Permit</option>
+                        <option value="Other">Other</option>
+                        {% elif data.visa_status == 'Visit_Visa' %}
+                        <option value="Permit">Permit</option>
+                        <option selected value="Visit_Visa">Visit Visa</option>
+                        <option value="Temporary_Permit">Temporary Permit</option>
+                        <option value="Other">Other</option>
+                        {% elif data.visa_status == 'Temporary_Permit' %}
+                        <option value="Permit">Permit</option>
+                        <option value="Visit_Visa">Visit Visa</option>
+                        <option selected value="Temporary_Permit">Temporary Permit</option>
+                        <option value="Other">Other</option>
+                        {% else %}
+                        <option value="Permit">Permit</option>
+                        <option value="Visit_Visa">Visit Visa</option>
+                        <option value="Temporary_Permit">Temporary Permit</option>
+                        <option selected value="Other">Other</option>
+                        {% endif %}
+                    </select>
+                </div>
+                <div class="form-group" id="visaDetails" style="display: block;">
+                    <label class="control-label">Upload Document</label>
+                    <input type="file" disabled accept=".pdf, .doc, .docx" name="visa_document" /><span>{{ data.visa_document }}</span>
+                </div>
+                <div class="form-group" id="profilePic" style="display: block;">
+                    <label class="control-label">Upload Profile Photo</label>
+                    <input type="file" disabled accept=".jpg, .jpeg, .png" name="profile_pic" /><span>{{ data.passport_picture }}</span>
+                </div>
+                <div class="form-group label-floating" id="visaExpiry" style="display: block;">
+
+                    <label class="control-label">Expiry Date (for Permit/Visa etc)</label>
+                    <input class="form-control" disabled placeholder="" type="date" name="visa_expiry_date" {% if data.visa_expiry_date %} value="{{ data.visa_expiry_date }}" {% else %} value="" {% endif %}/>
+                </div>
+
+            <div class="form-group label-floating">
+                <label class="control-label">Staying in Rwanda since when?</label>
+                <input class="form-control" disabled placeholder="" name="staying_in_rwanda_since" type="date" {% if data.staying_in_rwanda_since %} value="{{ data.staying_in_rwanda_since }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating">
+                <input type="checkbox" disabled name="living_with_dependents" id="living_with_dependents" {% if data.living_with_dependents %} value="{{ data.living_with_dependents }}" {% else %} value="" {% endif %}>
+                <label for="living_with_dependents">Living with dependents in Rwanda</label>
+            </div>
+        </div>
+    </div>
+    <h6 class="title">Contact Information</h6>
+    <div class="row">
+        <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group label-floating">
+                <label class="control-label">Mobile Number</label>
+                <input class="form-control" disabled name="mobile_number" type="text" {% if data.mobile_number %} value="{{ data.mobile_number }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">WhatsApp Number</label>
+                <input class="form-control" disabled name="whatsapp_number" type="text" {% if data.whatsapp_number %} value="{{ data.whatsapp_number }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Address in Rwanda</label>
+                <input class="form-control" disabled placeholder="" name="address_in_rwanda" type="text" {% if data.address_in_rwanda %} value="{{ data.address_in_rwanda }}" {% else %} value="" {% endif %} />
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Province</label>
+                <input class="form-control" disabled placeholder="" name="province" type="text" {% if data.province %} value="{{ data.province }}" {% else %} value="" {% endif %} />
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">District</label>
+                <input class="form-control" disabled placeholder="" name="district" type="text" {% if data.district %} value="{{ data.district }}" {% else %} value="" {% endif %} />
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Sector</label>
+                <input class="form-control" disabled placeholder="" name="sector" type="text" {% if data.sector %} value="{{ data.sector }}" {% else %} value="" {% endif %} />
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Cell</label>
+                <input class="form-control" disabled placeholder="" name="cell" type="text" {% if data.cell %} value="{{ data.cell }}" {% else %} value="" {% endif %}/>
+            </div>
+        </div>
+    </div>
+    <h6 class="title">Emergency Contact Information</h6>
+    <div class="row">
+        <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group label-floating">
+                <label class="control-label">Country</label>
+                <input class="form-control" disabled placeholder="" name="country" type="text" {% if data.emergency_country %} value="{{ data.emergency_country }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Other Full Address</label>
+                <input class="form-control" disabled placeholder="" name="address" type="text" {% if data.other_full_address %} value="{{ data.other_full_address }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Name of Contact Person</label>
+                <input class="form-control" disabled placeholder="" name="contact_name" type="text" {% if data.contact_name %} value="{{ data.contact_name }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Relation with Contact Person</label>
+                <input class="form-control" disabled placeholder="" name="relation" type="text" {% if data.relation %} value="{{ data.relation }}" {% else %} value="" {% endif %}/>
+            </div>
+            <div class="form-group label-floating">
+                <label class="control-label">Mobile Number for Contact Person</label>
+                <input class="form-control" disabled placeholder="" name="contact_mobile" type="text" {% if data.emergency_mobile_number %} value="{{ data.emergency_mobile_number }}" {% else %} value="" {% endif %}/>
+            </div>
+        </div>
+    </div>
+    <h6 class="title">Attachments</h6>
+    <div class="row">
+        <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="form-group" id="attachment1" style="display: block;">
+                <label class="control-label">Attachment 1</label>
+                <input type="file" disabled accept=".jpg, .jpeg, .png .pdf .doc .docx" name="attachment1" /><span>{{ data.attachment1 }}</span>
+            </div>
+            <div class="form-group" id="attachment2" style="display: block;">
+                <label class="control-label">Attachment 2</label>
+                <input type="file" disabled accept=".jpg, .jpeg, .png .pdf .doc .docx" name="attachment2" /><span>{{ data.attachment2 }}</span>
+            </div>
+            <div class="form-group" id="attachment3" style="display: block;">
+                <label class="control-label">Attachment 3</label>
+                <input type="file" disabled accept=".jpg, .jpeg, .png .pdf .doc .docx" name="attachment3" /><span>{{ data.attachment3 }}</span>
+            </div>
+            <div class="form-group" id="attachment4" style="display: block;">
+                <label class="control-label">Attachment 4</label>
+                <input type="file" disabled accept=".jpg, .jpeg, .png .pdf .doc .docx" name="attachment4" /><span>{{ data.attachment4 }}</span>
+            </div>
+        </div>
+    </div>
+    <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+        <input class="btn btn-primary btn-lg full-width" disabled type="submit">
+    </div>
+</form>
+
+<!-- ... end Personal Information Form  -->
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- ... end REGISTRATION ONBOARDING Personal Information -->
+<!-- Window-popup-CHAT for responsive min-width: 768px -->
+
+</div>
+</div>
+</div>
+<!-- ... end Window-popup-CHAT for responsive min-width: 768px -->
+<a class="back-to-top" href="#">
+<svg class="back-icon" height="18" width="14"><use xlink:href="#olymp-back-to-top"></use></svg>
+</a>
+<!-- JS Scripts -->
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var webpMachine = new webpHero.WebpMachine()
+            webpMachine.polyfillDocument()
+        });
+    </script>
+<script src="{% static 'js/jQuery/jquery-3.5.1.min.js' %}"></script>
+<script src="{% static 'js/libs/jquery.mousewheel.min.js' %}"></script>
+<script src="{% static 'js/libs/perfect-scrollbar.min.js' %}"></script>
+<script src="{% static 'js/libs/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'js/libs/material.min.js' %}"></script>
+<script src="{% static 'js/libs/selectize.min.js' %}"></script>
+<script src="{% static 'js/libs/moment.min.js' %}"></script>
+<script src="{% static 'js/libs/daterangepicker.min.js' %}"></script>
+<script src="{% static 'js/libs/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'js/libs/ajax-pagination.min.js' %}"></script>
+<script src="{% static 'js/libs/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/libs-init/libs-init.js' %}"></script>
+<script src="{% static 'Bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<!-- SVG icons loader -->
+<script src="{% static 'js/svg-loader.js' %}"></script>
+<!-- /SVG icons loader -->
+</body>
+</html>
+

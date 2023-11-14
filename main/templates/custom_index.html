@@ -1,0 +1,11 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block content %}
+    <div class="custom-admin-dashboard">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <p>Pending Registrations: {{ pending_count }}</p>
+        <p>Approved Registrations: {{ approved_count }}</p>
+        <p>Rejected Registrations: {{ rejected_count }}</p>
+    </div>
+{% endblock %}

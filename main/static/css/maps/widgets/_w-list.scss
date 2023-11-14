@@ -1,0 +1,23 @@
+/*------------- #W-LIST --------------*/
+
+
+
+.w-list {
+  a {
+	color: #888da8;
+	color: var(--olympus-body-font-color);
+	padding: 8px 0;
+	display: block;
+	font-weight: 500;
+	position: relative;
+
+	&:hover {
+	  color: #rgb(0, 181, 200);
+	  color: var(--olympus-primary-color);
+	}
+  }
+
+  ul {
+	margin-bottom: 0;
+  }
+}
