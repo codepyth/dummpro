@@ -1119,7 +1119,7 @@
     const nationalitySelect = document.getElementById("country-select");
     const proofOfOrigin = document.getElementById("proofOfOrigin");
     const proof_of_origin = document.getElementById("proof_of_origin");
-    const inputIDNo = document.getElementById("inputIDNo");
+    const inputIDNo = document.getElementById("input_id_field");
 
     proofOfOrigin.style.display = "none";
     inputIDNo.style.display = "none";
@@ -1235,14 +1235,14 @@
             <!-- Additional fields if nationality isn't Pakistan -->
             <div class="form-group" id="proofOfOrigin" style="display: none;">
                 <label class="control-label">Proof of Pakistan Origin</label>
-                <select class="form-select" name="proof_of_origin" id="proof_of_origin">
+                <select class="form-select" name="proof_of_origin" id="proof_of_origin" onchange="showFields()">
                     <option selected value="NIC">NIC</option>
                     <option value="POC">POC</option>
                     <option value="Other">Other</option>
                 </select>
             </div>
 
-            <div class="form-group" id="inputIDNo" style="display: none;">
+            <div class="form-group" id="input_id_field" style="display: none;">
                 <label class="control-label">Input ID No for Proof of Origin</label>
                 <input class="form-control" placeholder="" type="text" name="origin_id_number"/>
             </div>
