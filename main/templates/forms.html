@@ -1116,20 +1116,22 @@
     }
 
     function showFields() {
-        const nationalitySelect = document.getElementById("nationality");
-        const proofOfOrigin = document.getElementById("proofOfOrigin");
-        const inputIDNo = document.getElementById("inputIDNo");
+    const nationalitySelect = document.getElementById("country-select");
+    const proofOfOrigin = document.getElementById("proofOfOrigin");
+    const proof_of_origin = document.getElementById("proof_of_origin");
+    const inputIDNo = document.getElementById("inputIDNo");
 
-        proofOfOrigin.style.display = "none";
-        inputIDNo.style.display = "none";
+    proofOfOrigin.style.display = "none";
+    inputIDNo.style.display = "none";
 
-        if (nationalitySelect.value !== "Pakistan") {
-            proofOfOrigin.style.display = "block";
-            if (nationalitySelect.value === "other") {
-                inputIDNo.style.display = "block";
-            }
+    if (nationalitySelect.value !== "Pakistan") {
+        proofOfOrigin.style.display = "block";
+        if (proof_of_origin.value === "Other") {
+            inputIDNo.style.display = "block";
         }
     }
+}
+
 
     function showVisaDetails() {
         const visaStatusSelect = document.getElementById("visaStatus");
@@ -1222,26 +1224,29 @@
                 </span>
                 </input>
             </div>
-    <div class="form-group label-floating">
+            <div class="form-group label-floating">
                 <label class="control-label">Country</label>
-                <select class="form-control" name="nationality" id="country-select">
+                <select class="form-control" name="nationality" id="country-select" onchange="showFields()">
                     <option value="" disabled selected>Select your country</option>
+                   
+                </select>
+            </div>
+            
+            <!-- Additional fields if nationality isn't Pakistan -->
+            <div class="form-group" id="proofOfOrigin" style="display: none;">
+                <label class="control-label">Proof of Pakistan Origin</label>
+                <select class="form-select" name="proof_of_origin" id="proof_of_origin">
+                    <option selected value="NIC">NIC</option>
+                    <option value="POC">POC</option>
+                    <option value="Other">Other</option>
                 </select>
             </div>
 
-                <!-- Additional fields if nationality isn't Pakistan -->
-                <div class="form-group" id="proofOfOrigin" style="display: none;">
-                    <label class="control-label">Proof of Pakistan Origin</label>
-                    <select class="form-select" name="proof_of_origin">
-                        <option selected value="NIC">NIC</option>
-                        <option value="POC">POC</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="form-group" id="inputIDNo" style="display: none;">
-                    <label class="control-label">Input ID No for Proof of Origin</label>
-                    <input class="form-control" placeholder="" type="text" name="origin_id_number"/>
-                </div>
+            <div class="form-group" id="inputIDNo" style="display: none;">
+                <label class="control-label">Input ID No for Proof of Origin</label>
+                <input class="form-control" placeholder="" type="text" name="origin_id_number"/>
+            </div>
+            
 
                 <div class="form-group label-floating is-select">
                     <label class="control-label">Visa Status</label>
